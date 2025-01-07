@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" />
+
+  <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+   crossorigin="anonymous"
+  />
+  <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+   crossorigin="anonymous"
+  ></script>
+
+  <link href="../assets/css/style.css" rel="stylesheet" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="icon" type="image/x-icon" href="../assets/img/fav-icon.jpg" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKT235VMK">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2BKT235VMK');
+</script>
+ </head>
+ <body>
+  <header class="header">
+   <nav class="header-nav" id="navbar">
+    <div class="container container-navbar">
+     <div class="navbar-left-side">
+      <a href="/">
+       <img src="../assets/img/logo.png" alt="logo" />
+      </a>
+      <ul class="header-list">
+       <li class="header-item"><a href="/" class="header-link">Accueil</a></li>
+       <li class="header-item"><a href="/services" class="header-link active">Services</a></li>
+       <li class="header-item"><a href="/reservation" class="header-link">Réservation</a></li>
+       <li class="header-item"><a href="/contact" class="header-link">Contact</a></li>
+      </ul>
+     </div>
+
+     <div class="navbar-right-side">
+      <div class="d-flex align-items-center gap-1" id="btn-phone">
+       <i class="fa fa-phone icon-phone"></i>
+       <a href="tel:+3312345678" class="phone-number">09 70 44 66 56</a>
+      </div>
+      <div class="btn-header">
+       <a class="btn btn-primary-revers" href="../reservation"> Réserver </a>
+      </div>
+
+      <button class="btn-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+       <i class="fa fa-bars bars-icon"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+       <div class="offcanvas-header">
+        <img src="../assets/img/logo-offcanvas.jpg" alt="logo" class="lazyload" />
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+        <div class="bar-offcanvas"></div>
+        <div class="offcanvas-container">
+         <ul class="offcanvas-list">
+          <li class="offcanvas-item"><a href="/" class="offcanvas-link">Accueil</a></li>
+          <li class="offcanvas-item"><a href="/services" class="offcanvas-link active">Services</a></li>
+          <li class="offcanvas-item"><a href="/reservation" class="offcanvas-link">Réservation</a></li>
+          <li class="offcanvas-item"><a href="/contact" class="offcanvas-link">Contact</a></li>
+         </ul>
+
+         <div class="d-flex justify-content-between">
+          <a class="btn btn-primary" href="/reservation"> Réserver </a>
+
+          <div class="d-flex align-items-center gap-1">
+           <i class="fa fa-phone icon-phone"></i>
+           <a href="tel:+3312345678" class="phone-number-black">09 70 44 66 56</a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </nav>
+  </header>
+
+  <div class="background-page">
+   <section id="service">
+    <h1 class="section-title pt-5 pb-4">Services</h1>
+
+    <div class="container">
+     <div class="service-card" data-aos="fade-left">
+      <img src="../assets/img/service1.jpg" alt="service1" />
+      <div class="service-card-desc">
+       <h3 class="service-card-title">Chauffeurs Certifiés</h3>
+       <p class="service-card-pargraph">
+        Tous nos chauffeurs font l’objet d’un contrôle minutieux (carte professionnelle, casier judiciaire, etc.) et d’une formation pour garantir un service courtois et professionnel.
+       </p>
+      </div>
+     </div>
+     <div class="service-card-underline"></div>
+
+     <div class="service-card service-card-revers" data-aos="fade-right">
+      <div class="service-card-desc">
+       <h3 class="service-card-title">Tarification Responsable</h3>
+       <p class="service-card-pargraph">
+        Pour chacune de vos réservations, notre service compare les tarifs de différentes compagnies et les diverses services des chauffeurs afin de vous fournir les tarifs les moins chers du marché.
+       </p>
+      </div>
+
+      <img src="../assets/img//service2.jpg" alt="service" />
+     </div>
+     <div class="service-card-underline"></div>
+
+     <div class="service-card" data-aos="fade-left">
+      <img src="../assets/img//service3.jpg" alt="service" />
+      <div class="service-card-desc">
+       <h3 class="service-card-title">Qualité Garantie</h3>
+       <p class="service-card-pargraph">
+        Nous nous engageons à respecter les process de la profession : accompagnement du client (ouverture des portes, prise en charge des bagages), friandises & bonbons, chargeurs, etc.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <footer>
+   <div class="footer-container">
+    <div class="container d-flex justify-content-between align-items-start flex-wrap">
+     <div class="footer-1-section">
+      <h2 class="footer-section-title">Plan du site</h2>
+      <a href="/" class="footer-link">Accueil</a>
+      <a href="/services" class="footer-link active">Services</a>
+      <a href="/reservation" class="footer-link">Réservation</a>
+      <a href="/contact" class="footer-link">Contact</a>
+     </div>
+     <div class="footer-2-section">
+      <img src="../assets/img/logo-footer.png" alt="logo" class="lazyload" />
+     </div>
+     <div>
+      <h2 class="footer-section-title">Contact</h2>
+      <div class="d-flex align-items-center gap-1 mt-4">
+       <i class="fa fa-phone icon-phone"></i>
+       <a href="tel:+3312345678" class="footer-phone-number">09 70 44 66 56</a>
+      </div>
+      <div class="d-flex align-items-center gap-1 mt-4">
+       <i class="fa fa-envelope-o footer-phone-number me-2"></i>
+       <a href="email:servicetaxiste@gmail.com" class="footer-phone-number">servicetaxiste@gmail.com</a>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="copy-right">Copyright © 2022 taxi-parisien-disponible.fr</div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="../assets/js/main.js"></script>
+ </body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="title" content="Taxi parisien disponible" />
+  <meta name="description" content="Leader du taxi à Paris Ile De France depuis 2008, réservez maintenant votre taxi.." />
+  <meta name="keywords" content="taxi,paris,service,réservation,taxi paris,réserver,taxi taxi parisien,taxi services" />
+  <meta name="google-site-verification" content="2srSkUOBvsJIoIXigjGCdKxcVCtowejn_YzLDSk62EY" />
+  <title>Accueil</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" />
+
+  <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+   crossorigin="anonymous"
+  />
+  <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+   crossorigin="anonymous"
+  ></script>
+
+  <link href="./assets/css/style.css" rel="stylesheet" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="icon" type="image/x-icon" href="./assets/img/fav-icon.jpg" />
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKT235VMK">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2BKT235VMK');
+</script>
+ </head>
+ <body>
+  <header class="header">
+   <nav class="header-nav" id="navbar">
+    <div class="container container-navbar">
+     <div class="navbar-left-side">
+      <a href="/">
+       <img src="./assets/img/logo.png" alt="logo" />
+      </a>
+      <ul class="header-list">
+       <li class="header-item"><a href="/" class="header-link active">Accueil</a></li>
+       <li class="header-item"><a href="/services" class="header-link">Services</a></li>
+       <li class="header-item"><a href="/reservation" class="header-link">Réservation</a></li>
+       <li class="header-item"><a href="/contact" class="header-link">Contact</a></li>
+      </ul>
+     </div>
+
+     <div class="navbar-right-side">
+      <div class="d-flex align-items-center gap-1" id="btn-phone">
+       <i class="fa fa-phone icon-phone"></i>
+       <a href="tel:0970446656" class="phone-number">09 70 44 66 56</a>
+      </div>
+      <div class="btn-header">
+       <a class="btn btn-primary-revers" href="/reservation"> Réserver </a>
+      </div>
+
+      <button class="btn-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+       <i class="fa fa-bars bars-icon"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+       <div class="offcanvas-header">
+        <img src="./assets/img/logo-offcanvas.jpg" alt="logo" class="lazyload" />
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+        <div class="bar-offcanvas"></div>
+        <div class="offcanvas-container">
+         <ul class="offcanvas-list">
+          <li class="offcanvas-item"><a href="/" class="offcanvas-link active">Accueil</a></li>
+          <li class="offcanvas-item"><a href="/services" class="offcanvas-link">Services</a></li>
+          <li class="offcanvas-item"><a href="/reservation" class="offcanvas-link">Réservation</a></li>
+          <li class="offcanvas-item"><a href="/contact" class="offcanvas-link">Contact</a></li>
+         </ul>
+
+         <div class="d-flex justify-content-between">
+          <a class="btn btn-primary" href="/reservation"> Réserver </a>
+
+          <div class="d-flex align-items-center gap-1">
+           <i class="fa fa-phone icon-phone"></i>
+           <a href="tel:+3312345678" class="phone-number-black">09 70 44 66 56</a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <div class="background">
+   <div class="banner">
+    <div class="over-banner">
+     <div class="container mt-5">
+      <h1 class="banner-title mt-3">Leader du taxi à Paris Ile De France depuis 2008</h1>
+      <div class="banner-container">
+       <div class="banner-container-50">
+        <!-- <span class="min-desciption">Service disponible 24h/24 7J7</span> -->
+        <!-- <div class="min-underline"></div> -->
+
+        <!--  <p class="banner-description"> Réservez votre taxi :</p>
+                                <a href="tel:0970446656" class=" link-phone">
+                                    <i class="fa fa-phone icon-phone"></i>
+                                    09 70 44 66 56
+                                </a>
+                                <div class="d-flex justify-content-center w-100">
+                                    <p class="banner-description">
+                                        Service 24h/24 et 7/7 <br> Paiement à la fin de la course.
+                                    </p>
+                                </div>
+                                <div class="btn-banner">
+                                    <a class="btn btn-primary" href="./reservation">
+                                        Réserver
+                                    </a>
+
+                                </div> -->
+
+        <div class="info-reservation">
+         <h2 class="title__info">Réservez votre taxi</h2>
+         <div class="d-flex gap-2">
+          <a href="tel:0970446656">
+           <button class="bt-green">09 70 44 66 56</button>
+          </a>
+
+          <a class="btn btn-primary" href="/reservation"> Réserver</a>
+         </div>
+         <div class="reservation-body">
+          <p>Service 24h/24 et 7/7</p>
+          <p>Paiement à la fin de la course.</p>
+         </div>
+        </div>
+       </div>
+
+       <div class="banner-container-50">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+         <div class="carousel-inner carousel-height">
+          <div class="carousel-item active">
+           <img src="./assets/img/slider1-2.png" class="d-block w-100 lazyload" alt="..." width="100%" height="100%" />
+          </div>
+          <div class="carousel-item">
+           <img src="./assets/img/slider2.png" class="d-block w-100 lazyload" alt="..." width="100%" height="100%" />
+          </div>
+          <div class="carousel-item">
+           <img src="./assets/img/slider3.png" class="d-block w-100 lazyload" alt="..." width="100%" height="100%" />
+          </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="over-banner-blue"></div>
+   </div>
+
+   <section id="reservation" class="section-margin" data-aos="fade-up">
+    <h1 class="section-title mt-5 mb-4">Réservation</h1>
+
+    <div class="container d-flex justify-content-center">
+     <form id="goToReservationPage" class="form-reservation">
+      <div class="d-flex w-100 gap-4 wrap-contact">
+       <div class="input-reservation">
+        <i class="fa fa-car"></i>
+        <select name="car-type" id="car-type" class="border-none-w-100" required>
+         <option value="standard" selected>Standard</option>
+         <option value="berline">Berline</option>
+         <option value="van">VAN</option>
+        </select>
+       </div>
+
+       <div class="input-reservation">
+        <i class="fa fa-refresh"></i>
+        <select name="trip-type" id="trip-type" class="border-none-w-100" required>
+         <option value="Aller simple">Aller simple</option>
+         <option value="Aller / Retour">Aller / Retour</option>
+        </select>
+       </div>
+      </div>
+
+      <div class="input-reservation my-3">
+       <i class="fa fa-map-marker"></i>
+       <input type="text" placeholder="Adresse de départ" id="from" class="border-none-w-100" required />
+      </div>
+      <span id="error-message-from" class="w-100" style="color: red"></span>
+      <div class="input-reservation">
+       <i class="fa fa-map-marker"></i>
+       <input type="text" placeholder="Destination" id="to" class="border-none-w-100" />
+      </div>
+      <span id="error-message-to" class="w-100" style="color: red"></span>
+      <div class="d-flex w-100 gap-4 my-3 wrap-date">
+       <div class="input-reservation">
+        <i class="fa fa-calendar-o"></i>
+        <input type="text" class="border-none-w-100" onfocus="(this.type='date')" id="start-date" name="start" min="2022-11" placeholder="Date de départ" required />
+       </div>
+
+       <div class="input-reservation">
+        <i class="fa fa-clock-o"></i>
+        <input type="time" id="time-start" placeholder="Date de départ" class="border-none-w-100" required />
+       </div>
+      </div>
+
+      <div class="d-flex w-100 gap-4 wrap-date d-none" id="dateRetour">
+       <div class="input-reservation">
+        <i class="fa fa-calendar-o"></i>
+        <input type="text" class="border-none-w-100" onfocus="(this.type='date')" id="return-date" name="end" min="2022-11" placeholder="Date de retour" />
+       </div>
+
+       <div class="input-reservation">
+        <i class="fa fa-clock-o"></i>
+        <input type="time" id="time-return" placeholder="Date de retour" class="border-none-w-100" />
+       </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-3">
+       <button class="btn btn-primary" type="submit">Envoyer</button>
+      </div>
+     </form>
+    </div>
+   </section>
+
+   <section id="our-vehicles-section" class="section-margin" data-aos="fade-up">
+    <h1 class="section-title my-4">nos véhicules</h1>
+
+    <div class="container our-vehicles-container">
+     <i class="fa fa-car icon-car mb-2"></i>
+     <span class="text-grey">Standard / BERLINE / VAN</span>
+     <div class="our-verhicle-cards">
+      <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+       <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       </div>
+       <div class="carousel-inner mt-4">
+        <div class="carousel-item active">
+         <div class="our-vehicle-card">
+          <img src="./assets/img/slider1-2.png" class="d-block w-100 lazyload" alt="..." width="100%" height="100%" />
+          <div class="d-flex flex-column align-items-center">
+           <h2 class="our-vehicle-title">Standard</h2>
+           <span class="text-grey mb-3">Confortable</span>
+           <a class="btn btn-primary-revers" href="/reservation">Réserver un chauffeur</a>
+          </div>
+         </div>
+        </div>
+
+        <div class="carousel-item">
+         <div class="our-vehicle-card">
+          <img src="./assets/img/slider2.png" class="d-block w-100 lazyload" alt="..." width="100%" height="100%" />
+          <div class="d-flex flex-column align-items-center">
+           <h2 class="our-vehicle-title">BERLINE</h2>
+           <span class="text-grey mb-3">Confortable et luxueuse</span>
+           <a class="btn btn-primary-revers" href="/reservation">Réserver un chauffeur</a>
+          </div>
+         </div>
+        </div>
+
+        <div class="carousel-item">
+         <div class="our-vehicle-card">
+          <img src="./assets/img/slider3.png" class="d-block w-100 lazyload" alt="..." width="100%" height="100%" />
+          <div class="d-flex flex-column align-items-center">
+           <h2 class="our-vehicle-title">VAN</h2>
+           <span class="text-grey mb-3">Confortable et luxueuse</span>
+           <a class="btn btn-primary-revers" href="/reservation">Réserver un chauffeur</a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+        <i class="fa fa-chevron-left carousel-prev-icon"></i>
+        <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+        <i class="fa fa-chevron-right carousel-next-icon"></i>
+        <span class="visually-hidden">Next</span>
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <section id="contact-us" class="section-margin" data-aos="fade-up">
+    <h1 class="section-title my-4">Nous contacter</h1>
+    <div class="container mt-5 d-flex flex-column align-items-center">
+     <form class="form-contact-us">
+      <div class="d-flex align-items-center gap-5 wrap-contact">
+       <input type="text" class="form-control" placeholder="Nom" id="nomPrenom" name="nomPrenom" required />
+       <input type="text" class="form-control" placeholder="Téléphone" id="phone" name="phone" required />
+      </div>
+      <input class="form-control my-4" type="text" placeholder="E-mail" id="email" name="email" required />
+      <textarea class="form-control" id="message" name="message" cols="30" rows="5" placeholder="Message" required></textarea>
+      <div class="d-flex justify-content-center mt-4">
+       <button id="submitForm" class="btn btn-primary" type="submit">Suivant</button>
+      </div>
+     </form>
+
+     <div class="call-us">
+      <div class="or">Ou</div>
+      <div class="d-flex justify-content-center gap-4 mt-3">
+       <span>Par téléphone</span>
+       <div class="d-flex align-items-center gap-1">
+        <i class="fa fa-phone icon-phone"></i>
+        <a href="tel:0970446656" class="phone-number-black">09 70 44 66 56</a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+
+  <footer>
+   <div class="footer-container">
+    <div class="container d-flex justify-content-between align-items-start flex-wrap">
+     <div class="footer-1-section">
+      <h2 class="footer-section-title">Plan du site</h2>
+      <a href="#" class="footer-link active">Accueil</a>
+      <a href="/services" class="footer-link">Services</a>
+      <a href="/reservation" class="footer-link">Réservation</a>
+      <a href="/contact" class="footer-link">Contact</a>
+     </div>
+     <div class="footer-2-section">
+      <img src="./assets/img/logo-footer.png" alt="logo" class="lazyload" />
+     </div>
+     <div>
+      <h2 class="footer-section-title">Contact</h2>
+      <div class="d-flex align-items-center gap-1 mt-4">
+       <i class="fa fa-phone icon-phone"></i>
+       <a href="tel:0970446656" class="footer-phone-number">09 70 44 66 56</a>
+      </div>
+      <div class="d-flex align-items-center gap-1 mt-4">
+       <i class="fa fa-envelope-o footer-phone-number me-2"></i>
+       <a href="email:servicetaxiste@gmail.com" class="footer-phone-number">servicetaxiste@gmail.com</a>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="copy-right">Copyright © 2022 taxi-parisien-disponible.fr</div>
+  </footer>
+
+  <script defer src="./assets/js/reservation.js"></script>
+  <script defer src="./assets/js/contact.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRg0WgLuj6W49GfqwVITzEApOmt903zf0&libraries=places&callback=initMap"></script>
+  <script defer src="./assets/js/main.js"></script>
+ </body>
+</html>

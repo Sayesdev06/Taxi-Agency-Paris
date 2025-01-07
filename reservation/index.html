@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="title" content="Réservation - Taxi parisien disponible" />
+  <meta name="description" content="Réservez votre taxi avec Taxi parisien disponible le leader du taxi à Paris Ile De France depuis 2008" />
+  <meta name="google-site-verification" content="2srSkUOBvsJIoIXigjGCdKxcVCtowejn_YzLDSk62EY" />
+  <meta name="keywords" content="taxi,paris,service,réservation,taxi paris,réserver,taxi taxi parisien,taxi services" />
+
+  <title>Réservation</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" />
+
+  <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+   crossorigin="anonymous"
+  />
+  <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+   crossorigin="anonymous"
+  ></script>
+
+  <link href="../assets/css/style.css" rel="stylesheet" media="all" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="icon" type="image/x-icon" href="../assets/img/fav-icon.jpg" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKT235VMK">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2BKT235VMK');
+</script>
+ </head>
+ <body>
+  <header class="header">
+   <nav class="header-nav" id="navbar">
+    <div class="container container-navbar">
+     <div class="navbar-left-side">
+      <a href="/">
+       <img src="../assets/img/logo.png" alt="logo" />
+      </a>
+      <ul class="header-list">
+       <li class="header-item"><a href="/" class="header-link">Accueil</a></li>
+       <li class="header-item"><a href="/services" class="header-link">Services</a></li>
+       <li class="header-item"><a href="/reservation" class="header-link active">Réservation</a></li>
+       <li class="header-item"><a href="/contact" class="header-link">Contact</a></li>
+      </ul>
+     </div>
+
+     <div class="navbar-right-side">
+      <div class="d-flex align-items-center gap-1" id="btn-phone">
+       <i class="fa fa-phone icon-phone"></i>
+       <a href="tel:0970446656" class="phone-number">09 70 44 66 56</a>
+      </div>
+      <div class="btn-header">
+       <a class="btn btn-primary-revers" href="#"> Réserver </a>
+      </div>
+
+      <button class="btn-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+       <i class="fa fa-bars bars-icon"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+       <div class="offcanvas-header">
+        <img src="../assets/img/logo-offcanvas.jpg" alt="logo" class="lazyload" />
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+        <div class="bar-offcanvas"></div>
+        <div class="offcanvas-container">
+         <ul class="offcanvas-list">
+          <li class="offcanvas-item"><a href="/" class="offcanvas-link">Accueil</a></li>
+          <li class="offcanvas-item"><a href="/services" class="offcanvas-link">Services</a></li>
+          <li class="offcanvas-item"><a href="/reservation" class="offcanvas-link active">Réservation</a></li>
+          <li class="offcanvas-item"><a href="/contact" class="offcanvas-link">Contact</a></li>
+         </ul>
+         <div class="d-flex justify-content-between">
+          <a class="btn btn-primary" href="/reservation"> Réserver </a>
+
+          <div class="d-flex align-items-center gap-1">
+           <i class="fa fa-phone icon-phone"></i>
+           <a href="tel:+3312345678" class="phone-number-black">09 70 44 66 56</a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <div class="background-page">
+   <div class="container">
+    <div id="toast" class="d-flex justify-content-center w-100 pt-3 d-none">
+     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="errToast">
+      <div class="toast-header">
+       <strong class="me-auto">Erreur</strong>
+      </div>
+      <div class="toast-body">validez vos données , et réessayez!</div>
+     </div>
+    </div>
+    <div class="d-flex justify-content-center pt-5" data-aos="zoom-in">
+     <div class="col-11 col-sm-11 col-md-11 col-lg-10 col-xl-9">
+      <div class="reservation-steps" id="steps-count">
+       <div class="reservation-step active" id="counter-step-1">
+        <div>1</div>
+        <span>Direction</span>
+       </div>
+
+       <div class="reservation-step" id="counter-step-2">
+        <div>2</div>
+        <span>Votre voiture</span>
+       </div>
+
+       <div class="reservation-step" id="counter-step-3">
+        <div>3</div>
+        <span>Information</span>
+       </div>
+
+       <div class="reservation-step" id="counter-step-4">
+        <div>4</div>
+        <span>Confirmation</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <section id="steps" data-aos="zoom-in">
+    <div class="container d-flex justify-content-center py-5">
+     <div class="col-11 col-sm-11 col-md-11 col-lg-10 col-xl-9">
+      <section id="step-1" class="">
+       <div class="d-flex justify-content-center">
+        <form id="go-to-step-2" class="form-reservation w-50">
+         <div class="d-flex w-100 gap-4 wrap-contact">
+          <div class="input-reservation">
+           <i class="fa fa-car"></i>
+           <select name="car-type" id="car-type" class="border-none-w-100" required>
+            <option value="standard" selected>Standard</option>
+            <option value="berline">Berline</option>
+            <option value="van">VAN</option>
+           </select>
+          </div>
+
+          <div class="input-reservation">
+           <i class="fa fa-refresh"></i>
+           <select name="trip-type" id="trip-type" class="border-none-w-100" required>
+            <option value="Aller simple">Aller simple</option>
+            <option value="Aller / Retour">Aller / Retour</option>
+           </select>
+          </div>
+         </div>
+
+         <div class="input-reservation my-3">
+          <i class="fa fa-map-marker"></i>
+          <input type="text" placeholder="Adresse de départ" id="from" class="border-none-w-100" required />
+         </div>
+         <span id="error-message-from" class="w-100" style="color: red"></span>
+         <div class="input-reservation">
+          <i class="fa fa-map-marker"></i>
+          <input type="text" placeholder="Destination" id="to" class="border-none-w-100" />
+         </div>
+         <span id="error-message-to" class="w-100" style="color: red"></span>
+         <div class="d-flex w-100 gap-4 my-3 wrap-date">
+          <div class="input-reservation">
+           <i class="fa fa-calendar-o"></i>
+           <input type="text" class="border-none-w-100" onfocus="(this.type='date')" id="start-date" name="start" min="2022-11" placeholder="Date de départ" required />
+          </div>
+
+          <div class="input-reservation">
+           <i class="fa fa-clock-o"></i>
+           <input type="time" id="time-start" placeholder="Date de départ" class="border-none-w-100" required />
+          </div>
+         </div>
+
+         <div class="d-flex w-100 gap-4 wrap-date d-none" id="dateRetour">
+          <div class="input-reservation">
+           <i class="fa fa-calendar-o"></i>
+           <input type="text" class="border-none-w-100" onfocus="(this.type='date')" id="return-date" name="end" min="2022-11" placeholder="Date de retour" />
+          </div>
+
+          <div class="input-reservation">
+           <i class="fa fa-clock-o"></i>
+           <input type="time" id="time-return" placeholder="Date de retour" class="border-none-w-100" />
+          </div>
+         </div>
+
+         <div class="d-flex justify-content-center mt-3">
+          <button class="btn btn-primary">Suivant</button>
+         </div>
+        </form>
+       </div>
+      </section>
+
+      <section id="step-2" class="d-none">
+       <div class="vehicles-cards">
+        <div class="vehicle-card">
+         <img src="../assets/img/slider1-2.png" class="lazyload" alt="vehicle" width="20%" height="20%" />
+         <div class="d-flex flex-column justify-content-center align-items-center gap-1">
+          <h3 class="vehicle-card-title">Standard</h3>
+          <span class="vehicle-card-desc">Max passanger : 3</span>
+          <span class="vehicle-card-desc">Max bags : 3</span>
+          <div class="d-flex gap-2">
+           <i class="fa fa-wifi vehicle-card-desc"></i>
+           <i class="fa fa-music vehicle-card-desc"></i>
+           <i class="fa fa-bolt vehicle-card-desc"></i>
+           <i class="fa fa-snowflake-o vehicle-card-desc"></i>
+          </div>
+         </div>
+         <div class="d-flex flex-column align-items-center justify-content-center">
+          <span class="vehicle-card-price" id="standard-price"></span>
+          <button class="btn btn-primary" onclick="goToNextStep('Standard')">Suivant</button>
+         </div>
+        </div>
+
+        <div class="vehicle-card">
+         <img src="../assets/img/slider2.png" class="lazyload" alt="vehicle" width="20%" height="20%" />
+         <div class="d-flex flex-column justify-content-center align-items-center gap-1">
+          <h3 class="vehicle-card-title">Berline</h3>
+          <span class="vehicle-card-desc">Max passanger : 3</span>
+          <span class="vehicle-card-desc">Max bags : 3</span>
+          <div class="d-flex gap-2">
+           <i class="fa fa-wifi vehicle-card-desc"></i>
+           <i class="fa fa-music vehicle-card-desc"></i>
+           <i class="fa fa-bolt vehicle-card-desc"></i>
+           <i class="fa fa-snowflake-o vehicle-card-desc"></i>
+          </div>
+         </div>
+         <div class="d-flex flex-column align-items-center justify-content-center">
+          <span class="vehicle-card-price" id="berline-price"></span>
+          <button class="btn btn-primary" onclick="goToNextStep('Berline')">Suivant</button>
+         </div>
+        </div>
+
+        <div class="vehicle-card">
+         <img src="../assets/img/slider3.png" class="lazyload" alt="vehicle" width="20%" height="20%" />
+         <div class="d-flex flex-column justify-content-center align-items-center gap-1">
+          <h3 class="vehicle-card-title">VAN</h3>
+          <span class="vehicle-card-desc">Max passanger : 7</span>
+          <span class="vehicle-card-desc">Max bags : 7</span>
+          <div class="d-flex gap-2">
+           <i class="fa fa-wifi vehicle-card-desc"></i>
+           <i class="fa fa-music vehicle-card-desc"></i>
+           <i class="fa fa-bolt vehicle-card-desc"></i>
+           <i class="fa fa-snowflake-o vehicle-card-desc"></i>
+          </div>
+         </div>
+         <div class="d-flex flex-column align-items-center justify-content-center">
+          <span class="vehicle-card-price" id="van-price"></span>
+          <button class="btn btn-primary" onclick="goToNextStep('VAN')">Suivant</button>
+         </div>
+        </div>
+       </div>
+      </section>
+
+      <section id="step-3" class="d-none">
+       <div class="d-flex justify-content-center">
+        <form class="form-information" id="go-to-step-4">
+         <h4 class="text-center mb-3">Information</h4>
+         <div class="d-flex align-items-center gap-5 wrap-contact">
+          <input type="text" id="info-first-name" class="form-control" placeholder="Prénom *" for="Prénom" required />
+          <input type="text" id="info-last-name" class="form-control" placeholder="Nom" for="nom" />
+         </div>
+
+         <input class="form-control my-4" id="info-phone" type="text" placeholder="Téléphone *" for="phone" required />
+         <input class="form-control my-4" id="info-email" type="text" placeholder="E-mail" for="email" />
+         <div class="payment-type">
+          <span>Type de paiement :</span>
+          <div class="d-flex align-items-center gap-2">
+           <input type="radio" name="info-payment-type" value="en espèces" checked />
+           <label for="payment-type-cash">en espèces</label>
+           <i class="fa fa-money"></i>
+          </div>
+
+          <div class="d-flex align-items-center gap-2">
+           <input type="radio" name="info-payment-type" value="carte bancaire" />
+           <label for="payment-type-credit-card">carte bancaire</label>
+           <i class="fa fa-credit-card"></i>
+          </div>
+         </div>
+
+         <textarea class="form-control" id="info-message" name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+         <div class="d-flex justify-content-center mt-4">
+          <button id="submit" class="btn btn-primary">
+           <span id="text"> Valider </span>
+           <span id="loading" class="d-none">
+            <div class="spinner-border" role="status">
+             <span class="sr-only">Loading...</span>
+            </div>
+           </span>
+          </button>
+         </div>
+        </form>
+       </div>
+      </section>
+
+      <section id="step-4" class="d-none">
+       <div class="d-flex justify-content-center px-3 w-100">
+        <div class="table-container">
+         <table class="confirmation-table" id="facture">
+          <tr>
+           <th colspan="2">Détails de direction</th>
+          </tr>
+          <tr>
+           <td>Adresse de départ :</td>
+           <td id="tab-from"></td>
+          </tr>
+          <tr id="row-to">
+           <td>Destination :</td>
+           <td id="tab-to"></td>
+          </tr>
+          <tr>
+           <td>Type de trajet :</td>
+           <td id="tab-tripType"></td>
+          </tr>
+          <tr>
+           <td>Date de départ :</td>
+           <td id="tab-startDate"></td>
+          </tr>
+          <tr id="row-returnDate">
+           <td>Date de retour :</td>
+           <td id="tab-returnDate"></td>
+          </tr>
+
+          <tr>
+           <th colspan="2">Détails du voiture</th>
+          </tr>
+          <tr>
+           <td>Type du voiture :</td>
+           <td id="tab-car-type"></td>
+          </tr>
+          <tr>
+           <td>prix :</td>
+           <td id="tab-price"></td>
+          </tr>
+
+          <tr>
+           <th colspan="2">Information personnel</th>
+          </tr>
+
+          <tr>
+           <td>Prénom :</td>
+           <td id="tab-name"></td>
+          </tr>
+          <tr id="row-last-name">
+           <td>Nom :</td>
+           <td id="tab-last-name"></td>
+          </tr>
+          <tr>
+           <td>Téléphone :</td>
+           <td id="tab-phone"></td>
+          </tr>
+          <tr>
+           <td>Type de paiement :</td>
+           <td id="tab-payment-type"></td>
+          </tr>
+          <tr id="row-email">
+           <td>E-mail :</td>
+           <td id="tab-email"></td>
+          </tr>
+          <tr id="row-msg">
+           <td>Message :</td>
+           <td id="tab-msg"></td>
+          </tr>
+
+          <tr id="finish-section">
+           <td colspan="2">
+            <div class="d-flex justify-content-end gap-2 w-100 p-2">
+             <button class="btn btn-secondary" id="print"><i class="fa fa-print me-2"></i> Imprimer</button>
+             <a class="btn btn-primary" href="/" aria-label="home-page">Terminer</a>
+            </div>
+           </td>
+          </tr>
+         </table>
+        </div>
+       </div>
+      </section>
+     </div>
+    </div>
+   </section>
+  </div>
+  <footer>
+   <div class="footer-container">
+    <div class="container d-flex justify-content-between align-items-start flex-wrap">
+     <div class="footer-1-section">
+      <h2 class="footer-section-title">Plan du site</h2>
+      <a href="/" class="footer-link">Accueil</a>
+      <a href="/services" class="footer-link">Services</a>
+      <a href="/reservation" class="footer-link active">Réservation</a>
+      <a href="/contact" class="footer-link">Contact</a>
+     </div>
+     <div class="footer-2-section">
+      <img src="../assets/img/logo-footer.png" alt="logo" class="lazyload" />
+     </div>
+     <div>
+      <h2 class="footer-section-title">Contact</h2>
+      <div class="d-flex align-items-center gap-1 mt-4">
+       <i class="fa fa-phone icon-phone"></i>
+       <a href="tel:0970446656" class="footer-phone-number">09 70 44 66 56</a>
+      </div>
+      <div class="d-flex align-items-center gap-1 mt-4">
+       <i class="fa fa-envelope-o footer-phone-number me-2"></i>
+       <a href="email:servicetaxiste@gmail.com" class="footer-phone-number">servicetaxiste@gmail.com</a>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="copy-right">Copyright © 2022 taxi-parisien-disponible.fr</div>
+  </footer>
+
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRg0WgLuj6W49GfqwVITzEApOmt903zf0&libraries=places&callback=initMap"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="../assets/js/reservation.js"></script>
+  <script defer src="../assets/js/main.js"></script>
+ </body>
+</html>
